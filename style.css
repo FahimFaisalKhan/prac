@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+.header {
+  display: flex;
+  margin: 9rem 18rem 12rem;
+  background-color: #161616;
+  border-radius: 30px;
+}
+.header_content_box {
+  width: 45%;
+  flex-direction: column;
+  margin: 16rem;
+}
+.header_content_box > *:not(:last-child) {
+  margin-bottom: 3.3rem;
+}
+.heading_primary {
+  color: #ffffff;
+  font-size: 10rem;
+  font-weight: 700;
+  line-height: 11rem;
+}
+.paragraph {
+  font-weight: 400;
+  font-size: 2.25rem;
+  line-height: 4rem;
+}
+.header_paragraph {
+  color: #ffffff;
+}
+.btn {
+  display: inline-block;
+  color: #ffffff;
+  padding: 2rem 3.6rem;
+  background-color: #dd0000;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 2.7rem;
+  font-weight: 700;
+  text-align: center;
+  transition: all 0.4s;
+}
+.btn:hover {
+  box-shadow: 5px 5px 3.5rem #ffffff;
+  transform: translateY(-1rem);
+}
+.btn:active {
+  box-shadow: 5px 5px 2rem #ffffff;
+  transform: translateY(-0.6rem);
+}
+.fa-chevron-right {
+  margin-left: 1.5rem;
+}
+.header_img_box {
+  display: flex;
+  width: 55%;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.header_img_box img {
+  width: 86rem;
+  height: 92rem;
+  display: block;
+}
+
+.sec_main {
+  margin: 10rem 18rem;
+  display: flex;
+  column-gap: 3rem;
+}
+.nav_box {
+  display: flex;
+  flex-direction: column;
+  width: 23%;
+  height: 45rem;
+  background-color: #161616;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+  row-gap: 4.2rem;
+  border-radius: 2rem;
+  padding: 0 4rem;
+}
+.nav_box li {
+  width: 35rem;
+}
+.nav_item {
+  text-decoration: none;
+  display: block;
+  color: #161616;
+  background-color: #ffffff;
+  border-radius: 1.8rem;
+  padding: 2.5rem 4rem;
+  text-align: center;
+  font-size: 2.7rem;
+}
+.cards {
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: stretch;
+  column-gap: 3rem;
+  row-gap: 3rem;
+}
+.card {
+  border: 1px solid #e8e8e8;
+  border-radius: 2rem;
+}
+.card > *:not(:first-child) {
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+.card > *:last-child {
+  margin-bottom: 2rem;
+}
+.card img {
+  width: 100%;
+  border-radius: 2rem 2rem 0 0;
+}
+.btn_second {
+  text-decoration: none;
+  color: #161616;
+  font-size: 2rem;
+  border: 1px solid #161616;
+  border-radius: 0.7rem;
+  padding: 0.4rem 2.5rem;
+  display: inline-block;
+}
+.heading_tertiary {
+  font-size: 2.7rem;
+  color: #161616;
+}
+.card span {
+  font-size: 2.5rem;
+  color: rgba(22, 22, 22, 0.7);
+  margin-right: 4rem;
+}
+.fa-clock,
+.fa-comment-dots {
+  color: rgba(22, 22, 22, 0.8);
+  font-size: 2.5rem;
+  margin-right: 1.5rem;
+}
+.hidden_button {
+  display: none;
+  margin: 8rem auto;
+}
+
+footer {
+  background-color: #161616;
+  text-align: center;
+  padding: 12rem 20rem;
+}
+
+.footer_heading {
+  font-size: 5.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 5rem;
+}
+
+footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 5rem;
+  flex-wrap: wrap;
+  row-gap: 2rem;
+}
+footer ul li {
+  list-style-type: none;
+}
+.footer_link {
+  text-decoration: none;
+  color: #b9b9b9;
+  font-size: 2.5rem;
+  padding: 1.5rem 8rem;
+}
+
+@media screen and (max-width: 770px) {
+  html {
+    font-size: 32%;
+  }
+  .header {
+    margin: 6rem 4rem;
+  }
+  .header_content_box {
+    width: 50%;
+    margin: 5rem;
+  }
+  .header_img_box {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+  }
+  .header_img_box img {
+    width: 78rem;
+    height: 82rem;
+  }
+
+  .sec_main {
+    margin: 6rem 4rem;
+    flex-direction: column;
+  }
+  .nav_box {
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    padding: 5rem 0;
+    column-gap: 4.5rem;
+    justify-content: space-between;
+  }
+  .nav_box li {
+    width: 33.33%;
+  }
+  .nav_item {
+    border: 1px solid #e8e8e8;
+  }
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .hidden_button {
+    display: block;
+  }
+}
