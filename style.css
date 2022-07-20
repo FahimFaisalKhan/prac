@@ -426,4 +426,10 @@ mobile */
     flex-direction: column;
     row-gap: 3rem;
   }
+  .footer_link {
+    padding: 1.5rem 2rem;
+  }
+  .heading_primary {
+    line-height: 10rem;
+  }
 }
