@@ -136,8 +136,7 @@ SECTION MAIN */
 }
 
 .m-small {
-  margin-top: 2rem;
-  margin-left: 2rem;
+  margin: 2rem;
 }
 .card > *:last-child {
   margin-bottom: 2rem;
@@ -185,7 +184,7 @@ STYLES FOR MATCHES.HTML END */
   display: inline-block;
 }
 .heading_tertiary {
-  font-size: 2.7rem;
+  font-size: 2.5rem;
   color: #161616;
 }
 .card > *:nth-child(4) span {
