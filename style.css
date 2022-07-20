@@ -231,6 +231,7 @@ footer ul {
 }
 footer ul li {
   list-style-type: none;
+  display: block;
 }
 .footer_link {
   text-decoration: none;
