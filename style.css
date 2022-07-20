@@ -212,7 +212,7 @@ FOOTER SECTION */
 footer {
   background-color: #161616;
   text-align: center;
-  padding: 12rem 20rem;
+  padding: 12rem 10rem;
 }
 
 .footer_heading {
@@ -340,7 +340,7 @@ MEDIA QUERIES FO DIFFERENT DEVICES */
     display: block;
   }
   .footer_link {
-    padding: 1.5rem 8rem;
+    padding: 1.5rem 12rem;
   }
 }
 /* 
