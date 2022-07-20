@@ -91,6 +91,12 @@ SECTION MAIN */
   display: flex;
   column-gap: 3rem;
 }
+.checkbox {
+  visibility: hidden;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
 .nav_box {
   display: flex;
   flex-direction: column;
@@ -336,9 +342,17 @@ MEDIA QUERIES FO DIFFERENT DEVICES */
   .cards {
     grid-template-columns: repeat(2, 1fr);
   }
+  .hide_in_tab {
+    display: none;
+  }
   .hidden_button {
     display: block;
   }
+
+  .checkbox:checked ~ .hide_in_tab {
+    display: block;
+  }
+
   .footer_link {
     padding: 1.5rem 12rem;
   }
