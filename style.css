@@ -1,4 +1,8 @@
+/* font-awsome import */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+
+/* 
+base style */
 
 * {
   margin: 0;
@@ -10,6 +14,9 @@ html {
 body {
   font-family: "Poppins", sans-serif;
 }
+/* 
+header section */
+
 .header {
   display: flex;
   margin: 9rem 18rem 12rem;
@@ -17,6 +24,7 @@ body {
   border-radius: 30px;
 }
 .header_content_box {
+  display: flex;
   width: 45%;
   flex-direction: column;
   margin: 16rem;
@@ -45,10 +53,13 @@ body {
   background-color: #dd0000;
   border-radius: 5px;
   text-decoration: none;
-  font-size: 2.7rem;
+  font-size: 3rem;
   font-weight: 700;
   text-align: center;
   transition: all 0.4s;
+}
+.btn_header {
+  width: 33%;
 }
 .btn:hover {
   box-shadow: 5px 5px 3.5rem #ffffff;
@@ -72,6 +83,8 @@ body {
   height: 92rem;
   display: block;
 }
+/* 
+SECTION MAIN */
 
 .sec_main {
   margin: 10rem 18rem;
@@ -100,10 +113,15 @@ body {
   color: #161616;
   background-color: #ffffff;
   border-radius: 1.8rem;
-  padding: 2.5rem 4rem;
+  padding: 2.1rem 4.4rem;
   text-align: center;
   font-size: 2.7rem;
 }
+.back_color {
+  background-color: #dd0000;
+  color: #ffffff;
+}
+
 .cards {
   flex-grow: 1;
   display: grid;
@@ -116,17 +134,47 @@ body {
   border: 1px solid #e8e8e8;
   border-radius: 2rem;
 }
-.card > *:not(:first-child) {
+
+.m-small {
   margin-top: 2rem;
   margin-left: 2rem;
 }
 .card > *:last-child {
   margin-bottom: 2rem;
 }
-.card img {
+.card > img {
   width: 100%;
   border-radius: 2rem 2rem 0 0;
 }
+
+/* 
+STYLES FOR MATCHES.HTML START */
+
+.teams {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7rem 4rem;
+  column-gap: 2.7rem;
+}
+.vs {
+  font-size: 2.7rem;
+  color: #161616;
+  font-weight: 700;
+}
+.flag {
+  width: 37%;
+}
+.left_align {
+  margin-left: 0;
+  color: #4d4d4d;
+}
+.center_align {
+  text-align: center;
+}
+/* 
+STYLES FOR MATCHES.HTML END */
+
 .btn_second {
   text-decoration: none;
   color: #161616;
@@ -140,7 +188,7 @@ body {
   font-size: 2.7rem;
   color: #161616;
 }
-.card span {
+.card > *:nth-child(4) span {
   font-size: 2.5rem;
   color: rgba(22, 22, 22, 0.7);
   margin-right: 4rem;
@@ -151,10 +199,16 @@ body {
   font-size: 2.5rem;
   margin-right: 1.5rem;
 }
+/* 
+HIDDEN BUTTON FOR TABLETS */
+
 .hidden_button {
   display: none;
   margin: 8rem auto;
 }
+
+/* 
+FOOTER SECTION */
 
 footer {
   background-color: #161616;
@@ -186,9 +240,63 @@ footer ul li {
   padding: 1.5rem 8rem;
 }
 
-@media screen and (max-width: 770px) {
+/* 
+MEDIA QUERIES FO DIFFERENT DEVICES */
+
+/* laptop */
+
+@media screen and (max-width: 1441px) {
   html {
-    font-size: 32%;
+    font-size: 42%;
+  }
+  .header {
+    margin: 6rem 4rem;
+  }
+  .header_content_box {
+    width: 50%;
+    margin: 14rem;
+  }
+  .header_img_box {
+    width: 50%;
+  }
+  .header_img_box img {
+    width: 80rem;
+    height: 85rem;
+  }
+
+  .sec_main {
+    margin: 6rem 4rem;
+  }
+
+  .teams {
+    padding: 4rem;
+  }
+}
+/* small laptop */
+@media screen and (max-width: 1025px) and (min-width: 770px) {
+  html {
+    font-size: 38%;
+  }
+
+  .header_content_box {
+    width: 52%;
+    margin: 14rem 8rem;
+  }
+  .header_img_box {
+    width: 48%;
+  }
+  .header_img_box img {
+    width: 78rem;
+    height: 85rem;
+  }
+  .footer_link {
+    padding: 1.5rem 4rem;
+  }
+}
+/* tab */
+@media screen and (max-width: 770px) and (min-width: 482px) {
+  html {
+    font-size: 30.5%;
   }
   .header {
     margin: 6rem 4rem;
@@ -198,7 +306,6 @@ footer ul li {
     margin: 5rem;
   }
   .header_img_box {
-    display: flex;
     width: 50%;
     justify-content: flex-end;
   }
@@ -208,7 +315,6 @@ footer ul li {
   }
 
   .sec_main {
-    margin: 6rem 4rem;
     flex-direction: column;
   }
   .nav_box {
@@ -231,5 +337,91 @@ footer ul li {
   }
   .hidden_button {
     display: block;
+  }
+}
+/* 
+mobile */
+
+@media screen and (max-width: 482px) {
+  html {
+    font-size: 23.3%;
+  }
+  .header {
+    margin: 4rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 0;
+  }
+  .header_content_box {
+    width: 90%;
+    margin: 5rem;
+    align-items: center;
+    padding: 12rem 0 4rem;
+  }
+  .header_paragraph {
+    text-align: center;
+    font-size: 2.8rem;
+    width: 70%;
+    line-height: 5.5rem;
+  }
+  .heading_primary {
+    text-align: center;
+    line-height: 13rem;
+  }
+  .header_content_box > *:not(:last-child) {
+    margin-bottom: 8rem;
+  }
+  .header_img_box {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+  }
+  .header_img_box img {
+    width: 78rem;
+    height: 82rem;
+    margin-left: 10rem;
+  }
+
+  .sec_main {
+    margin: 6rem 4rem;
+    flex-direction: column;
+  }
+  .nav_box {
+    width: 100%;
+    height: auto;
+    padding: 5rem 0 7rem;
+    column-gap: 4.5rem;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+    background-color: transparent;
+  }
+  .nav_box li {
+    width: 70%;
+    text-align: center;
+  }
+  .nav_item {
+    font-size: 5rem;
+    border: 1px solid #e8e8e8;
+  }
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .card > *:not(:first-child) {
+    margin-top: 4rem;
+  }
+
+  .hidden_button {
+    display: hidden;
+  }
+  .btn_second {
+    font-size: 4.5em;
+  }
+  .heading_tertiary {
+    font-size: 5rem;
+  }
+  footer ul {
+    flex-direction: column;
+    row-gap: 3rem;
   }
 }
