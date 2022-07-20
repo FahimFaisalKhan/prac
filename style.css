@@ -19,7 +19,7 @@ header section */
 
 .header {
   display: flex;
-  margin: 9rem 18rem 12rem;
+  margin: 9rem 9rem 12rem;
   background-color: #161616;
   border-radius: 30px;
 }
@@ -27,7 +27,7 @@ header section */
   display: flex;
   width: 45%;
   flex-direction: column;
-  margin: 16rem;
+  margin: 16rem 10rem;
 }
 .header_content_box > *:not(:last-child) {
   margin-bottom: 3.3rem;
