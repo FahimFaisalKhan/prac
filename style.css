@@ -246,7 +246,15 @@ footer ul li {
   padding: 1.5rem 6rem;
   display: inline-block;
 }
-
+.fa-facebook-square {
+  color: #4267b2;
+}
+.fa-instagram {
+  color: #e4405f;
+}
+.fa-linkedin {
+  color: #0072b1;
+}
 /* 
 MEDIA QUERIES FO DIFFERENT DEVICES */
 
