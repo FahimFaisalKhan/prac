@@ -414,6 +414,7 @@ mobile */
   .header_img_box img {
     width: 67rem;
     height: 71rem;
+    max-width: 100%;
     margin-left: 10rem;
   }
 
