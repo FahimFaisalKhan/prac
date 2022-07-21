@@ -413,10 +413,10 @@ mobile */
     justify-content: center;
   }
   .header_img_box img {
-    width: 77rem;
-    height: 86rem;
+    width: 70rem;
+    height: 66rem;
     max-width: 100%;
-    margin-left: 10rem;
+    margin-left: 5rem;
   }
 
   .sec_main {
