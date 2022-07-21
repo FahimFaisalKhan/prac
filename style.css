@@ -79,6 +79,7 @@ header section */
   justify-content: flex-start;
 }
 .header_img_box img {
+  max-width: 100%;
   width: 78rem;
   height: 83rem;
   display: block;
@@ -408,12 +409,12 @@ mobile */
   }
   .header_img_box {
     display: flex;
-    width: 50%;
+    width: 100%;
     justify-content: center;
   }
   .header_img_box img {
-    width: 67rem;
-    height: 71rem;
+    width: 77rem;
+    height: 86rem;
     max-width: 100%;
     margin-left: 10rem;
   }
